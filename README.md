@@ -2,6 +2,8 @@
 
 _Track Leads: Mark Kramer and Chris Moesel_
 
+> **WORK IN PROGRESS**: This exercise is still under development!
+
 During this Let’s Build! session, you will learn how to build a small FHIR Implementation Guide (IG)
 by attempting to reproduce the US Core Patient profile using FHIR Shorthand.
 
@@ -28,7 +30,7 @@ After completing this tutorial, you will be able to:
 
 - [FHIR Shorthand May 2020 ballot specification](http://hl7.org/fhir/uv/shorthand/2020May/)
 - [US Core STU 3.1 Patient profile](http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-patient.html)
-- FSH Let’s Build Starter Project (LINK TBD)
+- [FSH Let’s Build Starter Project](https://github.com/FHIR/fsh-devdays-exercise/archive/v0.0.1.zip)
 
 ## Exercise: US Core Patient Implementation Guide
 
@@ -45,11 +47,12 @@ to find the download packages and/or installation instructions.
 
 ## Step 2: Download and Open the FSH Let’s Build Starter Project
 
-Download the FSH Let’s Build Starter Project (LINK TBD) and unzip it to a location of your choice.
-This project provides a common project structure for FSH projects, allowing you to get started right
-away! Open this folder in your favorite text editor (we recommend
-[VS Code](https://code.visualstudio.com/) if you don’t have one) or file explorer (if your favorite
-text editor cannot open folders).
+Download the
+[FSH Let’s Build Starter Project](https://github.com/FHIR/fsh-devdays-exercise/archive/v0.0.1.zip)
+and unzip it to a location of your choice. This project provides a common project structure for FSH
+projects, allowing you to get started right away! Open this folder in your favorite text editor (we
+recommend [VS Code](https://code.visualstudio.com/) if you don’t have one) or file explorer (if your
+favorite text editor cannot open folders).
 
 TODO: Describe contents of starter project
 
