@@ -47,6 +47,10 @@ a minimal Implementation Guide that allows them to view their profile in a web b
 First, install the required software listed in the "Requirements" section above. Follow the links
 to find the download packages and/or installation instructions.
 
+Ensure that your version of SUSHI is 0.13.0 or later. Earlier versions will not work! To check:
+1. Open a command prompt using _Command Prompt_ on Windows or _Terminal_ on Mac.
+2. Run the command: `sushi -v`
+
 ## Step 2: Review the basics of FHIR Shorthand
 
 If you did not have an opportunity to attend the FHIR Shorthand tutorial, read the
@@ -67,18 +71,19 @@ starter project contains the following file structure:
 
 ```
 .
-├── README.md                  // The file you are reading now (!)
-├── _genonce.bat               // Win: Runs the IG Publisher on your IG
-├── _genonce.sh                // Mac: Runs the IG Publisher on your IG
-├── _updatePublisher.bat       // Win: Downloads and/or updates your IG Publisher jar
-├── _updatePublisher.sh        // Mac: Downloads and/or updates your IG Publisher jar
+├── .gitignore                // Ignores generated build artifacts in git so you don't check them in
+├── README.md                 // The file you are reading now (!)
+├── _genonce.bat              // Win: Runs the IG Publisher on your IG
+├── _genonce.sh               // Mac: Runs the IG Publisher on your IG
+├── _updatePublisher.bat      // Win: Downloads and/or updates your IG Publisher jar
+├── _updatePublisher.sh       // Mac: Downloads and/or updates your IG Publisher jar
 └── fsh
-    ├── config.yaml            // The SUSHI config file, pre-configured for US Core Patient IG
+    ├── config.yaml           // The SUSHI config file, pre-configured for US Core Patient IG
     ├── ig-data
     │   └── input
     │       └── pagecontent
-    │           └── index.md   // Markdown file providing the contents of your IG's home page
-    └── patient.fsh            // The FSH file where you will write your FSH definitions
+    │           └── index.md  // Markdown file providing the contents of your IG's home page
+    └── patient.fsh           // The FSH file where you will write your FSH definitions
 ```
 
 ## Step 4: Review the US Core Patient profile
@@ -128,7 +133,7 @@ Think you nailed Step 5? Great! Now it's time to prove it! Follow these steps to
 FSH project:
 
 1. Open a command prompt using _Command Prompt_ on Windows or _Terminal_ on Mac.
-2. Change directories to the folder for your FSH project (commandline newbies:
+2. Change directories to the unzipped `fsh-devdays-exercise-0.0.1` folder (commandline newbies:
    [Win](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/)
    / [Mac](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html))
 3. Run the following command: `sushi`
@@ -163,7 +168,7 @@ is _input_ to the HL7 FHIR IG Publisher. So... let’s try running the IG Publis
 
 To run the HL7 IG Publisher on the files that SUSHI just generated:
 
-1. Go back to your command prompt (which should still be in your FSH project directory)
+1. Go back to your command prompt (which should still be in your unzipped project directory)
 2. Run the following command to download the HL7 IG Publisher jar (Java Archive)
    - Windows: `_updatePublisher.bat`
    - Mac: `./_updatePublisher.sh`
@@ -187,7 +192,8 @@ and better things!
 > quite helpful when you're using the Auto IG Builder. If the redundancy really bothers you, then...
 > we're sorry. Hopefully you'll find that learning to live with it builds character. There is a
 > secret to make it stop, but you'll need to find it on your own in the
-> [Zulip](https://chat.fhir.org/) jungle.
+> [Zulip](https://chat.fhir.org/#narrow/stream/215610-shorthand/topic/way.20to.20turn.20off.20sushi.20and.20just.20run.20the.20publisher/near/199808387)
+> jungle.
 
 ## Step 7: Add Cardinality Constraints and Must Support Flags
 
@@ -400,7 +406,7 @@ access _after_ the `^` when setting metadata directly on an element in a profile
 
 At some point, every good parent takes the training wheels off the bike, takes a deep breath, and
 gives their kid a shove. This is that moment for us. You've proven you can do this, so now you're
-on you're own. If you're up to the challenge, finish this profile:
+on your own. If you're up to the challenge, finish this profile:
 
 - Create the [USCoreRaceExtension](http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-race.html)
   and its associated value sets
