@@ -28,7 +28,7 @@ After completing this tutorial, you will be able to:
 
 - [FHIR Shorthand May 2020 ballot specification](http://hl7.org/fhir/uv/shorthand/2020May/)
 - [US Core STU 3.1 Patient profile](http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-patient.html)
-- [FSH Let’s Build Starter Project](https://github.com/FHIR/fsh-devdays-exercise/archive/v0.0.1.zip)
+- [FSH Let’s Build Starter Project](https://github.com/standardhealth/fsh-devdays-exercise/releases/tag/v0.0.1)
 
 ## Exercise: US Core Patient Implementation Guide
 
@@ -60,7 +60,7 @@ understanding of FHIR Shorthand.
 ## Step 3: Download and Open the FSH Let’s Build Starter Project
 
 Download the
-[FSH Let’s Build Starter Project](https://github.com/FHIR/fsh-devdays-exercise/archive/v0.0.1.zip)
+[FSH Let’s Build Starter Project](https://github.com/standardhealth/fsh-devdays-exercise/releases/tag/v0.0.1)
 and unzip it to a location of your choice. This project provides a common project structure for FSH
 projects, allowing you to get started right away! You didn't really want to start _from scratch_,
 did you?
